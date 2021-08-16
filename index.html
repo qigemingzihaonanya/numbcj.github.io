@@ -1,1 +1,45 @@
-abracadabra
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABRACADARBA</title>
+    <style>
+        #sb{
+            font-size: 20px;
+            text-align: center;
+            transform-origin: 50% 50%;
+            transform: rotate(0deg);
+        }
+        @keyframes aa {
+            0% {
+                transform: rotate(0deg);
+            }
+            50% {
+                transform: rotate(180deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div style="height:40vh"></div>
+    <p id="sb">😱李 海 玉 😲 大 傻 逼😱</p>
+    <script>
+        const dom = document.getElementById('sb')
+        let num = 1
+        let interval = setInterval(() => {
+            if (num < 80) {
+                dom.style.animation = `aa ${2000 - num * 25}ms linear infinite`
+                num++
+            }
+        }, 100)
+    </script>
+</body>
+
+</html>
