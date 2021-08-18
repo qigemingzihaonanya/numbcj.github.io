@@ -1,12 +1,21 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">AMap</router-link> |
-      <router-link to="/about">About</router-link>
+      AMap
+      <!-- <router-link to="/">AMap</router-link> | -->
+      <!-- <router-link to="/about">About</router-link> -->
     </div>
-    <router-view/>
+    <!-- <router-view/> -->
+    <home></home>
   </div>
 </template>
+
+<script>
+import home from './views/Home.vue'
+export default {
+  components: { home }
+}
+</script>
 
 <style>
 #app {
