@@ -86,7 +86,5 @@ export default {
     width: 80vw;
     height: 80vh;
     margin: 0 auto;
-    border: solid red 1px;
-    box-sizing: border-box;
   }
 </style>
