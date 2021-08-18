@@ -1,5 +1,6 @@
 <template>
   <div class="about">
+    AAAAAA
     <canvas id="can"></canvas>
   </div>
 </template>
